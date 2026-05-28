@@ -1,3 +1,9 @@
+# ignore system / parent folder junk
+../../*
+../*
+*.svg
+*.log
+.DS_Store
 
 # Playwright
 node_modules/
