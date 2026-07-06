@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -142,3 +143,7 @@ frontend/
     "nodemon": "^3.1.10"
   }
 }
+=======
+# sauceDemo-automation
+# orangehrm-framework
+>>>>>>> 63c5b17863c88584000da6182ed2039dec45502f

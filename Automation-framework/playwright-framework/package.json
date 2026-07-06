@@ -1,0 +1,35 @@
+{
+  "name": "playwright-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:ui": "cucumber-js --tags @ui",
+    "test:api": "cucumber-js --tags @api",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open",
+    "clean:allure": "rm -rf allure-results allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "allure-commandline": "^2.41.0",
+    "allure-cucumberjs": "^3.9.0",
+    "allure-playwright": "^3.9.0",
+    "cross-env": "^10.1.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "@faker-js/faker": "^10.4.0",
+    "allure-js-commons": "^3.9.0",
+    "dotenv": "^17.4.2",
+    "winston": "^3.19.0"
+  }
+}
