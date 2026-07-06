@@ -1,0 +1,114 @@
+.dashboard {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #555;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card-info p {
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.primary-btn {
+  background: #1976d2;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #125ea8;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid #1976d2;
+  color: #1976d2;
+}
+
+.secondary-btn:hover {
+  background: #f0f7ff;
+}
+
+.loader,
+.error {
+  text-align: center;
+  margin-top: 50px;
+}

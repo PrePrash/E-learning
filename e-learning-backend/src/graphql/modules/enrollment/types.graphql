@@ -1,0 +1,24 @@
+
+
+
+type Course {
+  id: ID!
+  title: String!
+  description: String
+  instructor: User!
+  enrolledStudents: [User!]!
+  price: Float
+  category: String
+  level: String
+  image: String
+  badge: String
+  createdAt: String!
+  updatedAt: String!
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  role: String!
+}

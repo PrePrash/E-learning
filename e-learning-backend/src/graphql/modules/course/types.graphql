@@ -1,0 +1,17 @@
+type Course {
+  id: ID
+  title: String!
+  description: String!
+  category: String
+  level: String!
+  price: Float!
+  image: String
+  createdAt: String!
+  updatedAt: String!
+}
+
+
+extend type Subscription {
+  courseCreated: Course!
+  studentEnrolled(courseId: ID!): String! # example
+}

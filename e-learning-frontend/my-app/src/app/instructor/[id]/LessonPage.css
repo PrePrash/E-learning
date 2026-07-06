@@ -1,0 +1,44 @@
+.lesson-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.lesson-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.code-block {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+}
+
+.note-block {
+  background-color: #fff9c4;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #fbc02d;
+}
+
+.quiz-block {
+  background-color: #e0f7fa;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #26c6da;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

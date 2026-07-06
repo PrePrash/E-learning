@@ -1,0 +1,29 @@
+type Query {
+courses: [Course]
+course(id: ID!): Course
+getEnrolledCourses: [Course]!
+    
+}
+
+type Mutation {
+  createCourse(input: CreateCourseInput!): Course!
+  enrollInCourse(courseId: ID!): Course!
+}
+input CreateCourseInput {
+  title: String!
+  description: String!
+  category: String
+  level: String!
+  price: Float!
+  image: String
+}
+
+type Subscription {
+  courseCreated: Course!
+   newStudentEnrolled(instructorId: ID!): StudentEnrollment!
+}
+
+type StudentEnrollment {
+  message: String!
+  timestamp: String!
+}
